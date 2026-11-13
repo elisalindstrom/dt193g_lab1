@@ -31,6 +31,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.active {
+    font-weight: bold;
+}
+
 li {
     list-style: none;
 }
@@ -42,7 +46,6 @@ header {
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    font-weight: bold;
     border-bottom: 1px solid #FEF204;
 }
 
@@ -54,7 +57,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 #app {
