@@ -1,1 +1,32 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    background-color: #4a38b0;
+    color: #efff80;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+a {
+    color: #efff80;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    border: transparent;
+}
+
+.btn-primary {
+    background-color: #4a38b0;
+}
+
+.btn-primary:hover {
+    background-color: #efff80;
+    color: #000000;
+}

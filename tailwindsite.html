@@ -22,91 +22,106 @@
         </header>
 
         <main class="max-w-281 flex flex-col items-center gap-4 mx-auto p-4 mt-5">
-            <h1 class="text-2xl sm:text-3xl font-bold">Tailwind</h1>
-            <!-- "prose" ger max-width 65ch -->
-            <p class="max-w-prose mb-5">
-                Tailwind är ett CSS-ramverk som gör det möjligt att skriva klasser direkt vid elementen i HTML-koden,
-                det är ett så kallat utility-first-ramverk. <a href="https://tailwindcss.com/">Tailwinds webbplats.</a>
-            </p>
-            <h2 class="text-xl sm:text-2xl">Min upplevelse</h2>
-            <p class="max-w-prose mb-5">
-                Det är enkelt att komma igång med Tailwind, särskilt efter att tillägget Tailwind CSS IntelliSense
-                installerats i Visual Studio Code. Tillägget hjälper till med klassnamn och gör det enklare att både
-                lära sig och hitta rätt bland namnen. Nackdelen jag upplevt är att det kan bli lite rörigt i HTML-koden
-                som jag vanligtvis brukar hålla ganska stilren.
-            </p>
+            <section>
+                <h1 class="text-2xl sm:text-3xl font-bold">Tailwind</h1>
+                <!-- "prose" ger max-width 65ch -->
+                <p class="max-w-prose mb-5">
+                    Tailwind är ett CSS-ramverk som gör det möjligt att skriva klasser direkt vid elementen i
+                    HTML-koden,
+                    det är ett så kallat utility-first-ramverk. Mer information om ramverket finns på <a
+                        href="https://tailwindcss.com/" target="_blank">Tailwinds
+                        webbplats.</a>
+                </p>
+                <h2 class="text-xl sm:text-2xl">Min upplevelse</h2>
+                <p class="max-w-prose mb-5">
+                    Det var hyfsat enkelt att komma igång med Tailwind, särskilt efter att tillägget Tailwind CSS
+                    IntelliSense
+                    installerats i Visual Studio Code. Tillägget hjälper till med klassnamn och gör det enklare att både
+                    lära sig och hitta rätt bland namnen. Till en början var det svårt att veta vilka klasser som skulle
+                    användas till vad. Nackdelen jag upplevt är också att det kan bli lite rörigt i
+                    HTML-koden,
+                    som jag vanligtvis brukar hålla ganska stilren.
+                </p>
+            </section>
 
-            <h2 class="text-xl sm:text-2xl">CSS-ramverk</h2>
-            <div class="overflow-x-auto">
-                <table class="bg-amber-700 min-w-full text-left border-collapse border-white border mb-5 rounded-lg">
-                    <thead>
-                        <tr class="border-white border">
-                            <th class="p-3 border">Ramverk</th>
-                            <th class="p-3 border">Typ</th>
-                            <th class="p-3 border">Testat</th>
-                            <th class="hidden md:table-cell p-3 border">Kommentar</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="border-white border">
-                            <td class="p-3 border">Tailwind</td>
-                            <td class="p-3 border">Utility-first</td>
-                            <td class="p-3 border">Ja</td>
-                            <td class="hidden md:table-cell p-3 border">Mycket detaljkodande</td>
-                        </tr>
-                        <tr class="border-white border">
-                            <td class="p-3 border">Bootstrap</td>
-                            <td class="p-3 border">Komponentbaserat</td>
-                            <td class="p-3 border">Nej</td>
-                            <td class="hidden md:table-cell p-3 border"></td>
-                        </tr>
-                        <tr class="border-white border">
-                            <td class="p-3 border">Tachyons</td>
-                            <td class="p-3 border">Utility-first</td>
-                            <td class="p-3 border">Nej</td>
-                            <td class="hidden md:table-cell p-3 border"></td>
-                        </tr>
-                        <tr class="border-white border">
-                            <td class="p-3 border">Semantic UI</td>
-                            <td class="p-3 border">Komponentbaserat</td>
-                            <td class="p-3 border">Nej</td>
-                            <td class="hidden md:table-cell p-3 border"></td>
-                        </tr>
-                        <tr class="border-white border">
-                            <td class="p-3 border">Materialize CSS</td>
-                            <td class="p-3 border">Komponentbaserat</td>
-                            <td class="p-3 border">Nej</td>
-                            <td class="hidden md:table-cell p-3 border"></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="flex flex-col md:flex-row justify-center">
+            <section class="bg-white text-gray-800 rounded-xl p-4">
+                <h2 class="text-xl sm:text-2xl text-black py-2">CSS-ramverk</h2>
+                <div class="overflow-x-auto">
+                    <table
+                        class="min-w-full text-left border-collapse border-white border mb-5 rounded-lg">
+                        <thead>
+                            <tr class="border-white border">
+                                <th class="p-3 border">Ramverk</th>
+                                <th class="p-3 border">Typ</th>
+                                <th class="p-3 border">Testat</th>
+                                <th class="hidden md:table-cell p-3 border">Kommentar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-white border">
+                                <td class="p-3 border">Tailwind</td>
+                                <td class="p-3 border">Utility-first</td>
+                                <td class="p-3 border">Ja</td>
+                                <td class="hidden md:table-cell p-3 border">Mycket detaljkodande</td>
+                            </tr>
+                            <tr class="border-white border">
+                                <td class="p-3 border">Bootstrap</td>
+                                <td class="p-3 border">Komponentbaserat</td>
+                                <td class="p-3 border">Nej</td>
+                                <td class="hidden md:table-cell p-3 border"></td>
+                            </tr>
+                            <tr class="border-white border">
+                                <td class="p-3 border">Tachyons</td>
+                                <td class="p-3 border">Utility-first</td>
+                                <td class="p-3 border">Nej</td>
+                                <td class="hidden md:table-cell p-3 border"></td>
+                            </tr>
+                            <tr class="border-white border">
+                                <td class="p-3 border">Semantic UI</td>
+                                <td class="p-3 border">Komponentbaserat</td>
+                                <td class="p-3 border">Nej</td>
+                                <td class="hidden md:table-cell p-3 border"></td>
+                            </tr>
+                            <tr class="border-white border">
+                                <td class="p-3 border">Materialize CSS</td>
+                                <td class="p-3 border">Komponentbaserat</td>
+                                <td class="p-3 border">Nej</td>
+                                <td class="hidden md:table-cell p-3 border"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="bg-white text-black rounded-lg p-4 w-full">
+                <h2 class="text-xl sm:text-2xl">Lägg till nytt ramverk i tabellen</h2>
+                <form class="bg-amber-700 flex flex-col gap-1 max-w-md w-full mb-5 p-3 rounded-lg" autocomplete="off">
+                    <label class="mt-2 font-medium" for="framework">Ramverkets namn</label>
+                    <input class="p-1.5 bg-white text-black rounded-md" id="framework" name="framework" type="text">
+
+                    <label class="mt-2 font-medium" for="type">Typ av ramverk</label>
+                    <select class="p-1.5 bg-white text-black rounded-md" id="type" name="type">
+                        <option value="">Välj typ</option>
+                        <option value="component">Komponentbaserat</option>
+                        <option value="utility">Utility-first</option>
+                    </select>
+
+                    <label class="mt-2 font-medium flex items-center gap-3" for="tested">
+                        <input class="w-4 h-4" id="tested" name="tested" type="checkbox" value="tested">
+                        Jag har testat ramverket
+                    </label>
+
+                    <label class="mt-2 font-medium" for="comment">Kommentar</label>
+                    <textarea class="p-1.5 bg-white text-black" id="comment" name="comment" rows="2"></textarea>
+
+                    <button
+                        class="mt-4 mb-2 font-bold bg-amber-100 text-black rounded-lg p-1.5 cursor-pointer hover:underline"
+                        type="submit">Lägg
+                        till ramverk</button>
+                </form>
+            </section>
             </div>
-
-            <h2 class="text-xl sm:text-2xl">Lägg till nytt ramverk i tabellen</h2>
-            <form class="bg-amber-700 flex flex-col gap-1 max-w-md w-full mb-5 p-3 rounded-lg" autocomplete="off">
-                <label class="mt-2 font-medium" for="framework">Ramverkets namn</label>
-                <input class="p-1.5 bg-white text-black rounded-md" id="framework" name="framework" type="text">
-
-                <label class="mt-2 font-medium" for="type">Typ av ramverk</label>
-                <select class="p-1.5 bg-white text-black rounded-md" id="type" name="type">
-                    <option value="">Välj typ</option>
-                    <option value="component">Komponentbaserat</option>
-                    <option value="utility">Utility-first</option>
-                </select>
-
-                <label class="mt-2 font-medium flex items-center gap-3" for="tested">
-                    Jag har testat ramverket
-                    <input class="w-4 h-4" id="tested" name="tested" type="checkbox" value="tested">
-                </label>
-
-                <label class="mt-2 font-medium" for="comment">Kommentar</label>
-                <textarea class="p-1.5 bg-white text-black" id="comment" name="comment" rows="2"></textarea>
-
-                <button
-                    class="mt-4 mb-2 font-bold bg-amber-100 text-black rounded-lg p-1.5 cursor-pointer hover:underline"
-                    type="submit">Lägg
-                    till ramverk</button>
-            </form>
         </main>
 
         <footer class="flex justify-center p-15">
