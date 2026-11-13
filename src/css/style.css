@@ -14,7 +14,6 @@ body {
 }
 
 p {
-    max-width: 60ch;
     margin-bottom: 1.5rem;
 }
 
@@ -44,6 +43,7 @@ header {
     padding: 1rem;
     gap: 1rem;
     font-weight: bold;
+    border-bottom: 1px solid #FEF204;
 }
 
 .logo {
@@ -57,14 +57,15 @@ header {
 }
 
 #app {
-    max-width: 1126px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100svh;
 }
 
 #center {
-    width: 600px;
-    max-width: 100%;
+    flex: 1;
+    max-width: 60ch;
+    width: 100%;
     padding: 2rem 1rem;
     margin: 0 auto;
     display: flex;
@@ -76,7 +77,8 @@ footer {
     display: flex;
     justify-content: center;
     color: #FEF204;
-    padding: 1rem;
+    padding: 3rem;
+    border-top: 1px solid #FEF204;
 }
 
 @media (max-width: 700px) {

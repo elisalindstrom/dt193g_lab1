@@ -9,99 +9,99 @@
 </head>
 
 <body class="bg-[#DD3C2A] text-white">
-    <div class="mx-auto min-h-svh">
-        <header class="bg-amber-700 flex flex-col sm:flex-row justify-between items-center p-3 sm:p-10 gap-2">
-            <a class="text-xl font-bold hover:underline" href="index.html">DT193G Laboration 1</a>
+    <!-- Column liten skärm och row på större skärm -->
+    <header class="flex flex-col sm:flex-row justify-between items-center gap-2 p-2 sm:p-4 border-b border-white/25">
+        <a class="text-xl font-bold hover:underline" href="index.html">DT193G Laboration 1</a>
 
-            <nav>
-                <ul class="sm:text-xl flex flex-col sm:flex-row gap-2 sm:gap-7 items-center">
-                    <li><a class="hover:underline" href="/bootstrapsite.html">Bootstrap</a></li>
-                    <li><a class="hover:underline" href="/tailwindsite.html">Tailwind</a></li>
-                </ul>
-            </nav>
-        </header>
+        <nav>
+            <ul class="sm:text-xl flex flex-col sm:flex-row gap-2 sm:gap-7 items-center">
+                <li><a class="hover:underline" href="/bootstrapsite.html">Bootstrap</a></li>
+                <li><a class="hover:underline font-bold" href="/tailwindsite.html">Tailwind</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main class="max-w-281 flex flex-col items-center gap-4 mx-auto p-4 mt-5">
-            <section>
-                <h1 class="text-2xl sm:text-3xl font-bold">Tailwind</h1>
-                <!-- "prose" ger max-width 65ch -->
-                <p class="max-w-prose mb-5">
-                    Tailwind är ett CSS-ramverk som gör det möjligt att skriva klasser direkt vid elementen i
-                    HTML-koden,
-                    det är ett så kallat utility-first-ramverk. Mer information om ramverket finns på <a
-                        href="https://tailwindcss.com/" target="_blank">Tailwinds
-                        webbplats.</a>
-                </p>
-                <h2 class="text-xl sm:text-2xl">Min upplevelse</h2>
-                <p class="max-w-prose mb-5">
-                    Det var hyfsat enkelt att komma igång med Tailwind, särskilt efter att tillägget Tailwind CSS
-                    IntelliSense
-                    installerats i Visual Studio Code. Tillägget hjälper till med klassnamn och gör det enklare att både
-                    lära sig och hitta rätt bland namnen. Till en början var det svårt att veta vilka klasser som skulle
-                    användas till vad. Nackdelen jag upplevt är också att det kan bli lite rörigt i
-                    HTML-koden,
-                    som jag vanligtvis brukar hålla ganska stilren.
-                </p>
-            </section>
+    <main class="max-w-281 flex flex-col items-center gap-4 mx-auto p-4 mt-5 mb-5">
+        <section>
+            <h1 class="text-2xl sm:text-3xl font-bold">Tailwind</h1>
+            <!-- "prose" ger max-width 65ch -->
+            <p class="max-w-prose mb-5">
+                Tailwind är ett CSS-ramverk som gör det möjligt att skriva klasser direkt vid elementen i
+                HTML-koden,
+                det är ett så kallat utility-first-ramverk. Mer information om ramverket finns på <a
+                    class="text-amber-200 hover:underline" href="https://tailwindcss.com/" target="_blank">Tailwinds
+                    webbplats.</a>
+            </p>
+            <h2 class="text-xl sm:text-2xl">Min upplevelse</h2>
+            <p class="max-w-prose mb-5">
+                Det var hyfsat enkelt att komma igång med Tailwind, särskilt efter att tillägget Tailwind CSS
+                IntelliSense
+                installerats i Visual Studio Code. Tillägget hjälper till med klassnamn och gör det enklare att både
+                lära sig och hitta rätt bland namnen. Till en början var det svårt att veta vilka klasser som skulle
+                användas till vad. Nackdelen jag upplevt är också att det kan bli lite rörigt i
+                HTML-koden,
+                som jag vanligtvis brukar hålla ganska stilren.
+            </p>
+        </section>
 
-            <div class="flex flex-col md:flex-row justify-center">
-            <section class="bg-white text-gray-800 rounded-xl p-4">
+        <!-- Column på mindre skärm och row på större skärm -->
+        <div class="flex flex-col md:flex-row gap-8 items-start">
+            <section class="bg-white text-black rounded-xl p-4">
                 <h2 class="text-xl sm:text-2xl text-black py-2">CSS-ramverk</h2>
                 <div class="overflow-x-auto">
-                    <table
-                        class="min-w-full text-left border-collapse border-white border mb-5 rounded-lg">
+                    <table class="min-w-full text-left border-collapse">
                         <thead>
-                            <tr class="border-white border">
-                                <th class="p-3 border">Ramverk</th>
-                                <th class="p-3 border">Typ</th>
-                                <th class="p-3 border">Testat</th>
-                                <th class="hidden md:table-cell p-3 border">Kommentar</th>
+                            <tr class="bg-gray-100">
+                                <th class="p-3 border border-gray-300">Ramverk</th>
+                                <th class="p-3 border border-gray-300">Typ</th>
+                                <th class="p-3 border border-gray-300">Testat</th>
+                                <th class="hidden md:table-cell p-3 border border-gray-300">Kommentar</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-white border">
-                                <td class="p-3 border">Tailwind</td>
-                                <td class="p-3 border">Utility-first</td>
-                                <td class="p-3 border">Ja</td>
-                                <td class="hidden md:table-cell p-3 border">Mycket detaljkodande</td>
+                            <tr>
+                                <td class="p-3 border border-gray-300">Tailwind</td>
+                                <td class="p-3 border border-gray-300">Utility-first</td>
+                                <td class="p-3 border border-gray-300">Ja</td>
+                                <td class="hidden md:table-cell p-3 border border-gray-300">Mycket detaljkodande</td>
                             </tr>
-                            <tr class="border-white border">
-                                <td class="p-3 border">Bootstrap</td>
-                                <td class="p-3 border">Komponentbaserat</td>
-                                <td class="p-3 border">Nej</td>
-                                <td class="hidden md:table-cell p-3 border"></td>
+                            <tr>
+                                <td class="p-3 border border-gray-300">Bootstrap</td>
+                                <td class="p-3 border border-gray-300">Komponentbaserat</td>
+                                <td class="p-3 border border-gray-300">Ja</td>
+                                <td class="hidden md:table-cell p-3 border border-gray-300">Enkel att använda</td>
                             </tr>
-                            <tr class="border-white border">
-                                <td class="p-3 border">Tachyons</td>
-                                <td class="p-3 border">Utility-first</td>
-                                <td class="p-3 border">Nej</td>
-                                <td class="hidden md:table-cell p-3 border"></td>
+                            <tr>
+                                <td class="p-3 border border-gray-300">Tachyons</td>
+                                <td class="p-3 border border-gray-300">Utility-first</td>
+                                <td class="p-3 border border-gray-300">Nej</td>
+                                <td class="hidden md:table-cell p-3 border border-gray-300"></td>
                             </tr>
-                            <tr class="border-white border">
-                                <td class="p-3 border">Semantic UI</td>
-                                <td class="p-3 border">Komponentbaserat</td>
-                                <td class="p-3 border">Nej</td>
-                                <td class="hidden md:table-cell p-3 border"></td>
+                            <tr>
+                                <td class="p-3 border border-gray-300">Semantic UI</td>
+                                <td class="p-3 border border-gray-300">Komponentbaserat</td>
+                                <td class="p-3 border border-gray-300">Nej</td>
+                                <td class="hidden md:table-cell p-3 border border-gray-300"></td>
                             </tr>
-                            <tr class="border-white border">
-                                <td class="p-3 border">Materialize CSS</td>
-                                <td class="p-3 border">Komponentbaserat</td>
-                                <td class="p-3 border">Nej</td>
-                                <td class="hidden md:table-cell p-3 border"></td>
+                            <tr>
+                                <td class="p-3 border border-gray-300">Materialize CSS</td>
+                                <td class="p-3 border border-gray-300">Komponentbaserat</td>
+                                <td class="p-3 border border-gray-300">Nej</td>
+                                <td class="hidden md:table-cell p-3 border border-gray-300"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <section class="bg-white text-black rounded-lg p-4 w-full">
-                <h2 class="text-xl sm:text-2xl">Lägg till nytt ramverk i tabellen</h2>
-                <form class="bg-amber-700 flex flex-col gap-1 max-w-md w-full mb-5 p-3 rounded-lg" autocomplete="off">
+            <section class="bg-white text-black rounded-xl p-4 w-full">
+                <h2 class="text-xl sm:text-2xl text-black py-2">Lägg till nytt ramverk i tabellen</h2>
+                <form class="flex flex-col gap-1 max-w-md w-full mb-5 p-2 rounded-lg" autocomplete="off">
                     <label class="mt-2 font-medium" for="framework">Ramverkets namn</label>
-                    <input class="p-1.5 bg-white text-black rounded-md" id="framework" name="framework" type="text">
+                    <input class="p-2 border border-gray-300 rounded" id="framework" name="framework" type="text">
 
                     <label class="mt-2 font-medium" for="type">Typ av ramverk</label>
-                    <select class="p-1.5 bg-white text-black rounded-md" id="type" name="type">
+                    <select class="p-2 border border-gray-300 rounded" id="type" name="type">
                         <option value="">Välj typ</option>
                         <option value="component">Komponentbaserat</option>
                         <option value="utility">Utility-first</option>
@@ -113,21 +113,21 @@
                     </label>
 
                     <label class="mt-2 font-medium" for="comment">Kommentar</label>
-                    <textarea class="p-1.5 bg-white text-black" id="comment" name="comment" rows="2"></textarea>
+                    <textarea class="p-2 border border-gray-300 rounded" id="comment" name="comment"
+                        rows="2"></textarea>
 
                     <button
-                        class="mt-4 mb-2 font-bold bg-amber-100 text-black rounded-lg p-1.5 cursor-pointer hover:underline"
+                        class="mt-4 font-bold bg-[#DD3C2A] text-white rounded p-1.5 cursor-pointer hover:bg-amber-200 hover:text-black"
                         type="submit">Lägg
                         till ramverk</button>
                 </form>
             </section>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <footer class="flex justify-center p-15">
-            <p>Av Elisa L. 2026</p>
-        </footer>
-    </div>
+    <footer class="flex justify-center p-12 border-t border-white/25">
+        <p>Av Elisa L. 2026</p>
+    </footer>
 </body>
 
 </html>
