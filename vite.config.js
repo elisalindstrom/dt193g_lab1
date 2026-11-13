@@ -8,7 +8,8 @@ export default defineConfig({
             input: {
                 main: resolve(__dirname, "index.html"),
                 bootstrap: resolve(__dirname, "bootstrapsite.html"),
-                tailwind: resolve(__dirname, "tailwindsite.html")
+                tailwind: resolve(__dirname, "tailwindsite.html"),
+                publish: resolve(__dirname, "publicering.html")
             }
         }
     },

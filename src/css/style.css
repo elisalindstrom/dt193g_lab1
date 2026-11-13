@@ -53,7 +53,8 @@ header {
 .menu-list {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 #app {
